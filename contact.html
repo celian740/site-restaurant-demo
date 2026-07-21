@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & Réservation — Nam Prik Tai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">NAM PRIK <span>ใต้</span></a>
+  <div class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">Notre histoire</a>
+    <a href="gallery.html">Galerie</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+  <a class="nav-cta" href="contact.html">Réserver</a>
+</nav>
+
+<div class="page-header">
+  <div class="wrap">
+    <span class="eyebrow">Réservation & contact</span>
+    <h1>Une table vous attend.</h1>
+  </div>
+</div>
+
+<section style="padding-top:60px;">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="info-line"><span class="label">Adresse</span><span>[À compléter — vieille ville de Bangkok]</span></div>
+      <div class="info-line"><span class="label">Téléphone</span><span>[À compléter]</span></div>
+      <div class="info-line"><span class="label">Horaires</span><span>11h00 – 22h00, tous les jours</span></div>
+      <div class="info-line"><span class="label">Réseaux</span><span>Facebook · Instagram</span></div>
+
+      <form onsubmit="event.preventDefault(); this.querySelector('.confirm').style.display='block';">
+        <input type="text" placeholder="Nom" required>
+        <input type="tel" placeholder="Téléphone" required>
+        <select required>
+          <option value="" disabled selected>Nombre de personnes</option>
+          <option>1–2</option>
+          <option>3–4</option>
+          <option>5+</option>
+        </select>
+        <input type="datetime-local" required>
+        <button type="submit" class="btn-primary" style="cursor:pointer; border:1px solid var(--chili);">Envoyer la demande</button>
+        <p class="confirm" style="display:none; font-family:'IBM Plex Mono', monospace; font-size:0.8rem; color:var(--turmeric);">Demande envoyée — le restaurant vous confirmera par téléphone.</p>
+      </form>
+    </div>
+    <div class="map-box">
+      <span class="eyebrow">Carte</span>
+      <p style="color:var(--rice-dim); font-size:0.85rem;">Emplacement Google Maps à intégrer ici</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-inner">
+    <a class="logo" href="index.html">NAM PRIK <span>ใต้</span></a>
+    <div class="foot-links">
+      <a href="menu.html">Menu</a>
+      <a href="about.html">Notre histoire</a>
+      <a href="gallery.html">Galerie</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
